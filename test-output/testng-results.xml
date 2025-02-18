@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-12T11:46:06 IST" name="Default suite" finished-at="2025-02-12T11:46:20 IST" duration-ms="13987">
+  <suite started-at="2025-02-18T10:48:05 IST" name="Default suite" finished-at="2025-02-18T10:48:23 IST" duration-ms="17679">
     <groups>
     </groups>
-    <test started-at="2025-02-12T11:46:06 IST" name="Default test" finished-at="2025-02-12T11:46:20 IST" duration-ms="13987">
+    <test started-at="2025-02-18T10:48:05 IST" name="Default test" finished-at="2025-02-18T10:48:23 IST" duration-ms="17679">
       <class name="Module1ForMedicalTestClass.MedicalTestClass">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0]" started-at="2025-02-12T11:46:06 IST" name="OpenBrowser" finished-at="2025-02-12T11:46:13 IST" duration-ms="6759" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0]" started-at="2025-02-18T10:48:05 IST" name="OpenBrowser" finished-at="2025-02-18T10:48:14 IST" duration-ms="9128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="LoginToApp()[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0]" started-at="2025-02-12T11:46:13 IST" name="LoginToApp" finished-at="2025-02-12T11:46:17 IST" duration-ms="4340" status="PASS">
+        <test-method is-config="true" signature="LoginToApp()[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0]" started-at="2025-02-18T10:48:15 IST" name="LoginToApp" finished-at="2025-02-18T10:48:19 IST" duration-ms="4318" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginToApp -->
-        <test-method signature="verifyTC()[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0]" started-at="2025-02-12T11:46:17 IST" name="verifyTC" finished-at="2025-02-12T11:46:20 IST" duration-ms="2514" status="FAIL">
+        <test-method signature="verifyTC()[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0]" started-at="2025-02-18T10:48:19 IST" name="verifyTC" finished-at="2025-02-18T10:48:22 IST" duration-ms="2973" status="FAIL">
           <exception class="java.io.FileNotFoundException">
             <full-stacktrace>
               <![CDATA[java.io.FileNotFoundException: 
@@ -57,7 +57,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTC -->
-        <test-method is-config="true" signature="CloseToApp(org.testng.ITestResult)[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0]" started-at="2025-02-12T11:46:20 IST" name="CloseToApp" finished-at="2025-02-12T11:46:20 IST" duration-ms="207" status="PASS">
+        <test-method is-config="true" signature="CloseToApp(org.testng.ITestResult)[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0]" started-at="2025-02-18T10:48:22 IST" name="CloseToApp" finished-at="2025-02-18T10:48:22 IST" duration-ms="162" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -68,7 +68,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseToApp -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0]" started-at="2025-02-12T11:46:20 IST" name="CloseBrowser" finished-at="2025-02-12T11:46:20 IST" duration-ms="104" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0]" started-at="2025-02-18T10:48:22 IST" name="CloseBrowser" finished-at="2025-02-18T10:48:23 IST" duration-ms="1037" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
