@@ -24,7 +24,7 @@ public class UtilityClass {
 	}
 	public static String TestData(int rowIndex,int colIndex) throws EncryptedDocumentException, IOException 
 	{
-		FileInputStream file=new FileInputStream("");
+		FileInputStream file=new FileInputStream("C:\\Users\\Admin\\eclipse-workspace\\NewMavenProject\\TestData\\TestDataFile.xlsx");
 		Sheet sh=WorkbookFactory.create(file).getSheet("Sheet1");
 		String value=sh.getRow(rowIndex).getCell(colIndex).getStringCellValue();
 		return value;

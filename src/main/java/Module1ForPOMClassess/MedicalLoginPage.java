@@ -9,7 +9,7 @@ public class MedicalLoginPage {
 @FindBy(xpath="//input[@name='UserName']")private WebElement UN;
 @FindBy(xpath="//input[@name='Password']")private WebElement PWD;
 @FindBy(xpath="(//button[@class='login-btn'])[1]")private WebElement login;
-@FindBy(xpath="(//div[@class='headname'])[1]")private WebElement text;
+@FindBy(xpath="(//h3[@style='color: #fff; font-weight: 800; font-size: 32px;'])[1]")private WebElement textdata;
 
 public MedicalLoginPage(WebDriver driver)
 {
@@ -30,8 +30,8 @@ public void ClickMedicalLogin()
 }
 public String verifyTest()
 {
-	String textvalue=text.getText();
-	System.out.println(textvalue);
+	String textvalue=textdata.getText();
+	//System.out.println(textvalue);
 	return textvalue;
 }
 

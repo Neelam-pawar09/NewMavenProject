@@ -1,34 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-18T10:48:05 IST" name="Default suite" finished-at="2025-02-18T10:48:23 IST" duration-ms="17679">
+  <suite started-at="2025-02-25T18:49:50 IST" name="Default suite" finished-at="2025-02-25T18:50:14 IST" duration-ms="23215">
     <groups>
     </groups>
-    <test started-at="2025-02-18T10:48:05 IST" name="Default test" finished-at="2025-02-18T10:48:23 IST" duration-ms="17679">
+    <test started-at="2025-02-25T18:49:50 IST" name="Default test" finished-at="2025-02-25T18:50:14 IST" duration-ms="23215">
       <class name="Module1ForMedicalTestClass.MedicalTestClass">
-        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0]" started-at="2025-02-18T10:48:05 IST" name="OpenBrowser" finished-at="2025-02-18T10:48:14 IST" duration-ms="9128" status="PASS">
+        <test-method is-config="true" signature="OpenBrowser()[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0]" started-at="2025-02-25T18:49:50 IST" name="OpenBrowser" finished-at="2025-02-25T18:49:58 IST" duration-ms="7136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenBrowser -->
-        <test-method is-config="true" signature="LoginToApp()[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0]" started-at="2025-02-18T10:48:15 IST" name="LoginToApp" finished-at="2025-02-18T10:48:19 IST" duration-ms="4318" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginToApp -->
-        <test-method signature="verifyTC()[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0]" started-at="2025-02-18T10:48:19 IST" name="verifyTC" finished-at="2025-02-18T10:48:22 IST" duration-ms="2973" status="FAIL">
-          <exception class="java.io.FileNotFoundException">
+        <test-method is-config="true" signature="LoginToApp()[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0]" started-at="2025-02-25T18:49:58 IST" name="LoginToApp" finished-at="2025-02-25T18:50:14 IST" duration-ms="15994" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <input _ngcontent-ng-c531934329="" pinputtext="" type="text" autocomplete="off" ptooltip="Alt+B" tooltipevent="hover" class="p-element p-inputtext p-component w-full search-button"> is not clickable at point (164, 202). Other element would receive the click: <div _ngcontent-ng-c531934329="" class="popupsearch-container open">...</div>
+  (Session info: chrome=133.0.6943.127)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4d3bc1c075ccbb188a4223b0191960e, clickElement {id=f.3584FAA528381F8E6E137B199B3D50BA.d.AD1DC5F7968D5EF2C43C599C758E96F6.e.47}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63950/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4d3bc1c075ccbb188a4223b0191960e)] -> xpath: //input[@class='p-element p-inputtext p-component w-full search-button']]
+Session ID: e4d3bc1c075ccbb188a4223b0191960e]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.io.FileNotFoundException: 
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:106)
-at LibraryFile.UtilityClass.TestData(UtilityClass.java:27)
-at Module1ForMedicalTestClass.MedicalTestClass.verifyTC(MedicalTestClass.java:50)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input _ngcontent-ng-c531934329="" pinputtext="" type="text" autocomplete="off" ptooltip="Alt+B" tooltipevent="hover" class="p-element p-inputtext p-component w-full search-button"> is not clickable at point (164, 202). Other element would receive the click: <div _ngcontent-ng-c531934329="" class="popupsearch-container open">...</div>
+  (Session info: chrome=133.0.6943.127)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4d3bc1c075ccbb188a4223b0191960e, clickElement {id=f.3584FAA528381F8E6E137B199B3D50BA.d.AD1DC5F7968D5EF2C43C599C758E96F6.e.47}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63950/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4d3bc1c075ccbb188a4223b0191960e)] -> xpath: //input[@class='p-element p-inputtext p-component w-full search-button']]
+Session ID: e4d3bc1c075ccbb188a4223b0191960e
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at Module1ForPOMClassess.MedicalCounterSalePage.CounterSaleSendDatainInputField(MedicalCounterSalePage.java:21)
+at Module1ForMedicalTestClass.MedicalTestClass.LoginToApp(MedicalTestClass.java:54)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
@@ -53,22 +84,92 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.io.FileNotFoundException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginToApp -->
+        <test-method signature="verifyTC()[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0]" started-at="2025-02-25T18:50:14 IST" name="verifyTC" finished-at="2025-02-25T18:50:14 IST" duration-ms="1" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <input _ngcontent-ng-c531934329="" pinputtext="" type="text" autocomplete="off" ptooltip="Alt+B" tooltipevent="hover" class="p-element p-inputtext p-component w-full search-button"> is not clickable at point (164, 202). Other element would receive the click: <div _ngcontent-ng-c531934329="" class="popupsearch-container open">...</div>
+  (Session info: chrome=133.0.6943.127)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4d3bc1c075ccbb188a4223b0191960e, clickElement {id=f.3584FAA528381F8E6E137B199B3D50BA.d.AD1DC5F7968D5EF2C43C599C758E96F6.e.47}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63950/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4d3bc1c075ccbb188a4223b0191960e)] -> xpath: //input[@class='p-element p-inputtext p-component w-full search-button']]
+Session ID: e4d3bc1c075ccbb188a4223b0191960e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input _ngcontent-ng-c531934329="" pinputtext="" type="text" autocomplete="off" ptooltip="Alt+B" tooltipevent="hover" class="p-element p-inputtext p-component w-full search-button"> is not clickable at point (164, 202). Other element would receive the click: <div _ngcontent-ng-c531934329="" class="popupsearch-container open">...</div>
+  (Session info: chrome=133.0.6943.127)
+Build info: version: '4.23.0', revision: '4df0a231af'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4d3bc1c075ccbb188a4223b0191960e, clickElement {id=f.3584FAA528381F8E6E137B199B3D50BA.d.AD1DC5F7968D5EF2C43C599C758E96F6.e.47}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.127, chrome: {chromedriverVersion: 133.0.6943.126 (cffa127ce7b..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63950}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63950/devtoo..., se:cdpVersion: 133.0.6943.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (e4d3bc1c075ccbb188a4223b0191960e)] -> xpath: //input[@class='p-element p-inputtext p-component w-full search-button']]
+Session ID: e4d3bc1c075ccbb188a4223b0191960e
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:527)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at Module1ForPOMClassess.MedicalCounterSalePage.CounterSaleSendDatainInputField(MedicalCounterSalePage.java:21)
+at Module1ForMedicalTestClass.MedicalTestClass.LoginToApp(MedicalTestClass.java:54)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTC -->
-        <test-method is-config="true" signature="CloseToApp(org.testng.ITestResult)[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0]" started-at="2025-02-18T10:48:22 IST" name="CloseToApp" finished-at="2025-02-18T10:48:22 IST" duration-ms="162" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyTC status=FAILURE method=MedicalTestClass.verifyTC()[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="CloseToApp(org.testng.ITestResult)[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0]" started-at="2025-02-25T18:50:14 IST" name="CloseToApp" finished-at="2025-02-25T18:50:14 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseToApp -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0]" started-at="2025-02-18T10:48:22 IST" name="CloseBrowser" finished-at="2025-02-18T10:48:23 IST" duration-ms="1037" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Module1ForMedicalTestClass.MedicalTestClass@2d901eb0]" started-at="2025-02-25T18:50:14 IST" name="CloseBrowser" finished-at="2025-02-25T18:50:14 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
